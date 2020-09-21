@@ -23,6 +23,7 @@ class SynonymsController extends Controller
 
             $allSynonyms = Synonymys::findAllSynonyms($SearchQuery->query);
 
+            return $this->render('synonymsSearch', $allSynonyms);
         }
 
     }

@@ -5,6 +5,17 @@ Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
+<> 2020-09-21T103036.200.html
+
+###
+
+POST http://synonyms.loc/synonyms/search
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
 <> 2020-09-21T102246.200.html
 
 ###
