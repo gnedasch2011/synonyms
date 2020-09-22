@@ -28,27 +28,32 @@ class DefaultController extends Controller
 
             $SearchQuery->query = \Yii::$app->request->get('SearchQuery');
 
-            $this->view->title = '';
+            $this->view->title = "Синоним к слову {$SearchQuery->query}";
             $this->view->registerMetaTag(
-                ['name' => 'description', 'content' => '']
+                ['name' => 'description', 'content' => "Синоним к слову {$SearchQuery->query}"]
             );
 
             $searchQuery = $SearchQuery->query;
 
             $synonymsFindAll = Synonymys::synonymsFindAll($searchQuery);
-            $synonymsWithTheSameStart = Synonymys::synonymsWithTheSameStart($searchQuery);
-
             $synonymsFindAll = Synonymys::prepareForView($synonymsFindAll);
 
+            $synonymsWithTheSameStart = Synonymys::synonymsWithTheSameStart($searchQuery);
             $synonymsWithTheSameStart = Synonymys::prepareForView($synonymsWithTheSameStart);
 
 
-        echo "<pre>"; print_r($synonymsWithTheSameStart);die();
+            $synonymsWithTheSameFinal = Synonymys::synonymsWithTheSameFinal($searchQuery);
+            $synonymsWithTheSameFinal = Synonymys::prepareForView($synonymsWithTheSameFinal);
 
+
+
+          $synonymsInOneLine =Synonymys::synonymsInOneLine($synonymsFindAll);
 
             return $this->render('/default/list', [
                 'synonymsFindAll' => $synonymsFindAll,
+                'synonymsWithTheSameFinal' => $synonymsWithTheSameFinal,
                 'synonymsWithTheSameStart' => $synonymsWithTheSameStart,
+                'synonymsInOneLine' => $synonymsInOneLine,
                 'searchQuery' => $searchQuery,
             ]);
         }

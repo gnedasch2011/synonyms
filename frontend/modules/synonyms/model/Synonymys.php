@@ -45,7 +45,6 @@ class Synonymys extends \yii\db\ActiveRecord
 
     public static function synonymsFindAll($query)
     {
-        $query = 'жизнь';
 
         $res = self::find()
             ->where(['name' => $query])
@@ -58,16 +57,35 @@ class Synonymys extends \yii\db\ActiveRecord
 
         $out = self::returnRelationsSynonyms($res);
 
+        if (empty($out) && isset($res)) {
+            $out = self::returnRelationsFromSynonyms($res);
+        }
+
         return $out;
     }
 
     public static function synonymsWithTheSameStart($query)
     {
-        $query = 'жизнь';
+//        $query = 'жизнь';
 
         $out = self::find()
             ->where(['like', 'name', $query . "%", false])
-            ->andWhere(['not like', 'name', $query , false])
+            ->andWhere(['not like', 'name', $query, false])
+            ->asArray()
+            ->all();
+
+
+        return $out;
+
+    }
+
+    public static function synonymsWithTheSameFinal($query)
+    {
+//        $query = 'жизнь';
+
+        $out = self::find()
+            ->where(['like', 'name', "%" . $query, false])
+            ->andWhere(['not like', 'name', $query, false])
             ->asArray()
             ->all();
 
@@ -94,6 +112,25 @@ class Synonymys extends \yii\db\ActiveRecord
         return $synonymsArr;
     }
 
+
+    public static function returnRelationsFromSynonyms($res)
+    {
+        if ($res) {
+            $ids = ArrayHelper::getColumn($res, 'id');
+        }
+
+        $relationsIds = Relations::findRelationsFromSynonyms($ids);
+
+        $synonymsArr = self::find()
+            ->where(['id' => $relationsIds])
+            ->asArray()
+            ->all();
+
+
+        return $synonymsArr;
+    }
+
+
     public static function prepareForView($arr)
     {
         $out = [];
@@ -107,5 +144,15 @@ class Synonymys extends \yii\db\ActiveRecord
 
     }
 
+    public static function synonymsInOneLine($synonymsFindAll)
+    {
+        $out = '';
+
+        foreach ($synonymsFindAll as $item) {
+            $out .= $item['name'] . '; ';
+        }
+
+        return $out;
+    }
 
 }

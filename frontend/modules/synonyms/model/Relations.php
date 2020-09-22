@@ -58,4 +58,26 @@ class Relations extends \yii\db\ActiveRecord
 
         return $res;
     }
+
+
+    /*
+     * Поиск от синонима
+     */
+    public static function findRelationsFromSynonyms($ids)
+    {
+        $res = self::find()
+            ->where(['id_relations_synonymys' => $ids])
+            ->asArray()
+            ->all();
+
+        if ($res) {
+            $res = ArrayHelper::getColumn($res, 'id_synonymys');
+        }
+
+
+        return $res;
+    }
+
+
+
 }
