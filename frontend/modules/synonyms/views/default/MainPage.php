@@ -50,7 +50,7 @@ $SearchQuery = new \frontend\modules\search\form\SearchQuery();
             Больше: https://sinonim.org/
     </div>
 
-    <?php if ($popularWords): ?>
+    <?php if (isset($popularWords) && $popularWords): ?>
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h3>Популярные синонимы:</h3>
