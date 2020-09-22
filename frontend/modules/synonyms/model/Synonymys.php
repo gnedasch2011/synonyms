@@ -56,6 +56,33 @@ class Synonymys extends \yii\db\ActiveRecord
             $ids = ArrayHelper::getColumn($res, 'id');
         }
 
+        $out = self::returnRelationsSynonyms($res);
+
+        return $out;
+    }
+
+    public static function synonymsWithTheSameStart($query)
+    {
+        $query = 'жизнь';
+
+        $out = self::find()
+            ->where(['like', 'name', $query . "%", false])
+            ->andWhere(['not like', 'name', $query , false])
+            ->asArray()
+            ->all();
+
+
+        return $out;
+
+    }
+
+
+    public static function returnRelationsSynonyms($res)
+    {
+        if ($res) {
+            $ids = ArrayHelper::getColumn($res, 'id');
+        }
+
         $relationsIds = Relations::findRelations($ids);
 
         $synonymsArr = self::find()
@@ -66,5 +93,19 @@ class Synonymys extends \yii\db\ActiveRecord
 
         return $synonymsArr;
     }
+
+    public static function prepareForView($arr)
+    {
+        $out = [];
+
+        foreach ($arr as $item) {
+            $out[$item['id']]['name'] = $item['name'];
+            $out[$item['id']]['url'] = '/synonyms/' . $item['name'];
+        }
+
+        return $out;
+
+    }
+
 
 }

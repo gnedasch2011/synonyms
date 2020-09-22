@@ -33,12 +33,23 @@ class DefaultController extends Controller
                 ['name' => 'description', 'content' => '']
             );
 
-            $searchWord = $SearchQuery->query;
+            $searchQuery = $SearchQuery->query;
 
-            $synonymsFindAll = Synonymys::synonymsFindAll($searchWord);
+            $synonymsFindAll = Synonymys::synonymsFindAll($searchQuery);
+            $synonymsWithTheSameStart = Synonymys::synonymsWithTheSameStart($searchQuery);
+
+            $synonymsFindAll = Synonymys::prepareForView($synonymsFindAll);
+
+            $synonymsWithTheSameStart = Synonymys::prepareForView($synonymsWithTheSameStart);
+
+
+        echo "<pre>"; print_r($synonymsWithTheSameStart);die();
+
 
             return $this->render('/default/list', [
                 'synonymsFindAll' => $synonymsFindAll,
+                'synonymsWithTheSameStart' => $synonymsWithTheSameStart,
+                'searchQuery' => $searchQuery,
             ]);
         }
 
