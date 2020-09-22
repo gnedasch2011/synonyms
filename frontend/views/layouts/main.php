@@ -28,24 +28,31 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<?= $this->render('/block/header/_header.php') ;?>
-
-<div class="wrap">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <?php
-        // $this is the view object currently being used
-        echo Breadcrumbs::widget([
-            'homeLink' => [
-                'label' => 'Рифмы к словам',
-                'url' => Yii::$app->homeUrl,
-                'title' => 'Рифмы к словам',
-            ],
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]);
-        ?>
+<?= $this->render("@app/views/block/headers/_header.php"); ?>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <?php
+            // $this is the view object currently being used
+            echo Breadcrumbs::widget([
+                'homeLink' => [
+                    'label' => 'Рифмы к словам',
+                    'url' => Yii::$app->homeUrl,
+                    'title' => 'Рифмы к словам',
+                ],
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            ]);
+            ?>
+        </div>
+        <?= $content ?>
     </div>
-    <?= $content ?>
 </div>
+<?php
+echo common\widgets\micromark\MicromarkWidget::widget([
+    'items' => $this->params['breadcrumbs'] ?? [],
+    'template' => 'breadcrubs',
+]);
+?>
 <?php $this->endBody() ?>
 </body>
 </html>

@@ -1,9 +1,8 @@
 <?php
 
-use frontend\models\form\SearchQuery;
 use yii\helpers\Html;
 
-$SearchQuery = new SearchQuery();
+$SearchQuery = new \frontend\modules\search\form\SearchQuery();
 
 ?>
 
@@ -36,7 +35,7 @@ $SearchQuery = new SearchQuery();
             use yii\widgets\ActiveForm;
 
             $form = ActiveForm::begin([
-                'action' => '/synonyms/search',
+                'action' => '/search/index',
                 'options' => ['class' => 'navbar-form navbar-left'],
             ]) ?>
             <div class="form-group">

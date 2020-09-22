@@ -6,7 +6,7 @@
  * Time: 8:26
  */
 
-namespace frontend\models\form;
+namespace frontend\modules\search\form;
 
 class SearchQuery extends \yii\base\Model
 {

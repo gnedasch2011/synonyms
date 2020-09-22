@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models\synonyms;
+namespace app\modules\synonyms\model;
 
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -43,7 +43,7 @@ class Synonymys extends \yii\db\ActiveRecord
     }
 
 
-    public static function findAllSynonyms($query)
+    public static function synonymsFindAll($query)
     {
         $query = 'жизнь';
 

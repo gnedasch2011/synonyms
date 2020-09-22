@@ -20,11 +20,17 @@ return [
             'class' => 'yii\debug\Module',
             'allowedIPs' => ['127.0.0.1']
         ],
+        'search' => [
+            'class' => 'frontend\modules\search\Module',
+        ],
+        'synonyms' => [
+            'class' => 'frontend\modules\synonyms\Module',
+        ],
     ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
-              'enableCsrfValidation' => false,
+            'enableCsrfValidation' => false,
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -52,10 +58,9 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                //                'rhyme/index' => 'rhyme/index',
-//                'rhyme/<rhyme:\D+>' => 'rhyme/search-rhyme',
-//                '' => 'rhyme/index',
-//                'names' => 'rhyme/page-with-name',
+                '' => 'synonyms/default/main-page',
+                'search/index' => 'search/default/index',
+                'synonyms/<SearchQuery:\D+>' => 'synonyms/default/search-query',
 //                'sitemap.xml' => 'sitemap/default',
 //                'sitemap/<index:\d+>' => 'sitemap/default/sitemap',
 //                '<module:[\w-]+>/admin/<action:[\w-]+>/<id:\d+>' => '<module>/admin/<action>',

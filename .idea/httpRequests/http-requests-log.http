@@ -1,444 +1,538 @@
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T103036.200.html
+<> 2020-09-22T112537-1.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T102246.200.html
+<> 2020-09-22T112537.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T102022.200.html
+<> 2020-09-22T112521.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T102003.200.html
+<> 2020-09-22T112509.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101735.200.html
+<> 2020-09-22T112459.500.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101655.200.html
+<> 2020-09-22T111644.500.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101610.200.html
+<> 2020-09-22T111642.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101438.200.html
+<> 2020-09-22T111345.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101427.500.html
+<> 2020-09-22T111302.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101343.200.html
+<> 2020-09-22T110917.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101325.200.html
+<> 2020-09-22T110818.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T101304.200.html
+<> 2020-09-22T110751.500.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T100829.200.html
+<> 2020-09-22T110750.500.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T100814.200.html
+<> 2020-09-22T105712.200.html
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/synonyms/Жизнь
 Accept: */*
 Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T104025.200.html
+
+###
+
+POST http://synonyms.loc/synonyms/Жизнь
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T103951.404.html
+
+###
+
+POST http://synonyms.loc/synonyms/Жизнь
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T103851.404.html
+
+###
+
+POST http://synonyms.loc/synonyms/Жизнь
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T103850.404.html
+
+###
+
+POST http://synonyms.loc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T103423.200.html
+
+###
+
+POST http://synonyms.loc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T102255.500.html
+
+###
+
+POST http://synonyms.loc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T102242.404.html
+
+###
+
+POST http://synonyms.loc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T102228.404.html
+
+###
+
+POST http://synonyms.loc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T102139.404.html
+
+###
+
+POST http://synonyms.loc
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T102138.404.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T100508.200.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T094115.200.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T100358.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T100231-1.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T100231.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T100221.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T100217.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T093013.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092935.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092934.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092920.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092735.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092734.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: application/x-www-form-urlencoded
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092721.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092640.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092545.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092537.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092522.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092521.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
-
-SearchQuery%5Bquery%5D=te
-
-<> 2020-09-21T092446.200.html
-
-###
-
-POST http://synonyms.loc/synonyms/search
-Accept: */*
-Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
-Content-Type:: text/html; charset=UTF-8
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
+<> 2020-09-22T092602.200.html
+
 ###
 
-POST http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
 
 SearchQuery%5Bquery%5D=te
 
-<> 2020-09-21T092410.200.html
+<> 2020-09-22T092117.500.html
 
 ###
 
-GET http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
 
-<> 2020-09-21T092349.200.html
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T092001.500.html
 
 ###
 
-GET http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T092000.500.html
 
 ###
 
-GET http://synonyms.loc/synonyms/search
+POST http://synonyms.loc/search/index
 Accept: */*
 Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091921.200.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091915.500.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091900.500.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091833.500.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091157.500.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091152.500.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T091148.500.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T090441.200.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T085201.500.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T085144.200.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T085140.200.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T085127.400.html
+
+###
+
+POST1 http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T085044.404.html
+
+###
+
+POST http://synonyms.loc/search/index
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+SearchQuery%5Bquery%5D=te
+
+<> 2020-09-22T085013.404.html
 
 ###
 
