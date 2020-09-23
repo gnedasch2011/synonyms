@@ -97,16 +97,27 @@ class Synonymys extends \yii\db\ActiveRecord
 
     public static function returnRelationsSynonyms($res)
     {
+        if(empty($res)){
+            return [];
+        }
+
         if ($res) {
             $ids = ArrayHelper::getColumn($res, 'id');
         }
 
-        $relationsIds = Relations::findRelations($ids);
+        if($ids){
+            $relationsIds = Relations::findRelations($ids);
+        }
 
-        $synonymsArr = self::find()
-            ->where(['id' => $relationsIds])
-            ->asArray()
-            ->all();
+        $synonymsArr = [];
+
+        if($relationsIds){
+            $synonymsArr = self::find()
+                ->where(['id' => $relationsIds])
+                ->asArray()
+                ->all();
+
+        }
 
 
         return $synonymsArr;
@@ -115,6 +126,10 @@ class Synonymys extends \yii\db\ActiveRecord
 
     public static function returnRelationsFromSynonyms($res)
     {
+        if(empty($res)){
+            return [];
+        }
+
         if ($res) {
             $ids = ArrayHelper::getColumn($res, 'id');
         }
