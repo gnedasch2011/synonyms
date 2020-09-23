@@ -33,6 +33,11 @@ class DefaultController extends Controller
                 ['name' => 'description', 'content' => "Синоним к слову {$SearchQuery->query}"]
             );
 
+            $this->view->params['breadcrumbs'][] = array(
+                'label' => "Синоним к слову {$SearchQuery->query}",
+            );
+
+
             $searchQuery = $SearchQuery->query;
 
             $synonymsFindAll = Synonymys::synonymsFindAll($searchQuery);
@@ -46,8 +51,7 @@ class DefaultController extends Controller
             $synonymsWithTheSameFinal = Synonymys::prepareForView($synonymsWithTheSameFinal);
 
 
-
-          $synonymsInOneLine =Synonymys::synonymsInOneLine($synonymsFindAll);
+            $synonymsInOneLine = Synonymys::synonymsInOneLine($synonymsFindAll);
 
             return $this->render('/default/list', [
                 'synonymsFindAll' => $synonymsFindAll,

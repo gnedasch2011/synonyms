@@ -36,9 +36,9 @@ AppAsset::register($this);
             // $this is the view object currently being used
             echo Breadcrumbs::widget([
                 'homeLink' => [
-                    'label' => 'Рифмы к словам',
+                    'label' => 'Подбор синонимов',
                     'url' => Yii::$app->homeUrl,
-                    'title' => 'Рифмы к словам',
+                    'title' => 'Подбор синонимов',
                 ],
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]);

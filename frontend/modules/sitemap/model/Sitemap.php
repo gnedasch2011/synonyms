@@ -28,8 +28,6 @@ class Sitemap extends \yii\base\Model
     }
 
 
-
-
     public function getXml($urls)
     {
         $host = Yii::$app->request->hostInfo; // домен сайта

@@ -48,8 +48,8 @@ class DefaultController extends Controller
     {
 
         $arrUrls = HelperUrl::getAllUrls();
-        $limit = HelperUrl::LIMIT_CONST;        
-        
+        $limit = HelperUrl::LIMIT_CONST;
+
         $countUrls = count($arrUrls);
 
         $array_urls = array_slice($arrUrls, $limit * $index, $limit);
