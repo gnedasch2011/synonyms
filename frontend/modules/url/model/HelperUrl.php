@@ -24,8 +24,6 @@ class HelperUrl extends Model
         if (!$res = \Yii::$app->cache->get('allUrls')) {
             $res = [];
 
-
-
             $HagenOrfs = HagenOrf::find()
                 ->asArray()
                 ->orderBy('popular desc')

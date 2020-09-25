@@ -34,11 +34,6 @@ class DefaultController extends Controller
                 'label' => "Синоним к слову {$SearchQuery->query}",
             );
 
-
-            /*       title: Синонимы к слову #Слово# | Подобрать онлайн
-       h1: Синонимы к слову #Слово#
-       description:
-       */
             $searchQuery = $SearchQuery->query;
 
             $synonymsFindAll = Synonymys::synonymsFindAll($searchQuery);
