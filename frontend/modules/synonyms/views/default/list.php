@@ -1,6 +1,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h2>Поиск синонимов к слову <?= $searchQuery; ?></h2>
+    <h2>Синонимы к слову <?= $searchQuery; ?></h2>
 </div>
+
 <?php
 
 echo $this->render('@app/views/block/_output_block/_words_table.php', [

@@ -29,19 +29,40 @@ class DefaultController extends Controller
             $SearchQuery->query = \Yii::$app->request->get('SearchQuery');
 
             $this->view->title = "Синоним к слову {$SearchQuery->query}";
-            $this->view->registerMetaTag(
-                ['name' => 'description', 'content' => "Синоним к слову {$SearchQuery->query}"]
-            );
 
             $this->view->params['breadcrumbs'][] = array(
                 'label' => "Синоним к слову {$SearchQuery->query}",
             );
 
 
+            /*       title: Синонимы к слову #Слово# | Подобрать онлайн
+       h1: Синонимы к слову #Слово#
+       description:
+       */
             $searchQuery = $SearchQuery->query;
 
             $synonymsFindAll = Synonymys::synonymsFindAll($searchQuery);
             $synonymsFindAll = Synonymys::prepareForView($synonymsFindAll);
+
+
+            if (!empty($synonymsFindAll)) {
+                $synonymsForDescription = array_slice($synonymsFindAll, 0, 4);
+
+                $synonymsForDescriptionStr = '';
+                foreach ($synonymsForDescription as $item) {
+                    $synonymsForDescriptionStr .= $item['name'] . ', ';
+                }
+
+                $synonymsForDescriptionStr = mb_substr($synonymsForDescriptionStr, 0, -2);
+            }
+
+            $countSynonyms = count($synonymsFindAll);
+
+
+            $this->view->registerMetaTag(
+                ['name' => 'description', 'content' => "Синонимы к слову {$SearchQuery->query}: {$synonymsForDescriptionStr} | Узнать все  {$countSynonyms} синонимов слова {$SearchQuery->query}"]
+            );
+
 
             $synonymsWithTheSameStart = Synonymys::synonymsWithTheSameStart($searchQuery);
             $synonymsWithTheSameStart = Synonymys::prepareForView($synonymsWithTheSameStart);
