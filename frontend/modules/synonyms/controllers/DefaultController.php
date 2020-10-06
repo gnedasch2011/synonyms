@@ -16,7 +16,17 @@ class DefaultController extends Controller
 {
     public function actionMainPage()
     {
-        return $this->render('MainPage');
+            $this->view->title = 'Поиск синонимов';
+                $this->view->registerMetaTag(
+                  ['name' => 'description', 'content' => 'Поиск синонимов']
+                );
+
+        $popularWordsAll = Synonymys::findPopulars();
+        $popularWords = Synonymys::prepareForView($popularWordsAll);
+
+        return $this->render('MainPage', [
+            'popularWords' => $popularWords,
+        ]);
     }
 
 

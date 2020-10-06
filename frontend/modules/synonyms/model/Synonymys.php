@@ -97,7 +97,7 @@ class Synonymys extends \yii\db\ActiveRecord
 
     public static function returnRelationsSynonyms($res)
     {
-        if(empty($res)){
+        if (empty($res)) {
             return [];
         }
 
@@ -105,13 +105,13 @@ class Synonymys extends \yii\db\ActiveRecord
             $ids = ArrayHelper::getColumn($res, 'id');
         }
 
-        if($ids){
+        if ($ids) {
             $relationsIds = Relations::findRelations($ids);
         }
 
         $synonymsArr = [];
 
-        if($relationsIds){
+        if ($relationsIds) {
             $synonymsArr = self::find()
                 ->where(['id' => $relationsIds])
                 ->asArray()
@@ -126,7 +126,7 @@ class Synonymys extends \yii\db\ActiveRecord
 
     public static function returnRelationsFromSynonyms($res)
     {
-        if(empty($res)){
+        if (empty($res)) {
             return [];
         }
 
@@ -158,6 +158,30 @@ class Synonymys extends \yii\db\ActiveRecord
         return $out;
 
     }
+
+    public static function findPopulars()
+    {
+        $ids = PopularSynonymys::find()
+            ->orderBy('frequency desc')
+            ->all();
+
+        $ids = ArrayHelper::getColumn($ids, 'synonymys_id');
+
+        $allItem = self::find()
+            ->select('*')
+            ->from('synonymys')
+            ->leftJoin('popular_synonymys ps', 'ps.synonymys_id=synonymys.id')
+            ->where(['synonymys.id' => $ids])
+            ->orderBy('ps.frequency desc')
+            ->asArray()
+            ->all()
+
+        ;
+//        echo $allItem->createCommand()->getRawSql();die();
+        
+        return $allItem;
+    }
+
 
     public static function synonymsInOneLine($synonymsFindAll)
     {
