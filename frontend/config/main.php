@@ -64,9 +64,9 @@ return [
             'rules' => [
                 '' => 'synonyms/default/main-page',
                 'search/index' => 'search/default/index',
-                '/<SearchQuery:\D+>' => 'synonyms/default/search-query',
                 'sitemap.xml' => 'sitemap/default',
                 'sitemap/<index:\d+>' => 'sitemap/default/sitemap',
+                '/<SearchQuery:\D+>' => 'synonyms/default/search-query',
 //                '<module:[\w-]+>/admin/<action:[\w-]+>/<id:\d+>' => '<module>/admin/<action>',
 //                '<module:[\w-]+>/admin/<action:[\w-]+>' => '<module>/admin/<action>',
 //                [

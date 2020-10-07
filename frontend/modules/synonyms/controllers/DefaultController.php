@@ -49,7 +49,7 @@ class DefaultController extends Controller
             $synonymsFindAll = Synonymys::synonymsFindAll($searchQuery);
             $synonymsFindAll = Synonymys::prepareForView($synonymsFindAll);
 
-
+            $synonymsForDescriptionStr = '';
             if (!empty($synonymsFindAll)) {
                 $synonymsForDescription = array_slice($synonymsFindAll, 0, 4);
 

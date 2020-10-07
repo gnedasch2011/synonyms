@@ -21,11 +21,11 @@ class SitemapUrlHelper extends Model
     public static function getAllUrls()
     {
         \Yii::$app->cache->delete('allUrls');
-    
+
         if (!$res = \Yii::$app->cache->get('allUrls')) {
             $res = [];
-          
-            $res = \Yii::$app->db->createCommand('SELECT concat("/synonyms/", name) as url FROM synonyms.synonymys')
+
+            $res = \Yii::$app->db->createCommand('SELECT concat("/",name) as url FROM synonyms.synonymys')
                 ->queryAll();
 
             $res = ArrayHelper::getColumn($res, 'url');
