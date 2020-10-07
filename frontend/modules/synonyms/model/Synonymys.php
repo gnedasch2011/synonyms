@@ -152,7 +152,7 @@ class Synonymys extends \yii\db\ActiveRecord
 
         foreach ($arr as $item) {
             $out[$item['id']]['name'] = $item['name'];
-            $out[$item['id']]['url'] = '/synonyms/' . $item['name'];
+            $out[$item['id']]['url'] = '/' . $item['name'];
         }
 
         return $out;
@@ -174,11 +174,9 @@ class Synonymys extends \yii\db\ActiveRecord
             ->where(['synonymys.id' => $ids])
             ->orderBy('ps.frequency desc')
             ->asArray()
-            ->all()
-
-        ;
+            ->all();
 //        echo $allItem->createCommand()->getRawSql();die();
-        
+
         return $allItem;
     }
 
