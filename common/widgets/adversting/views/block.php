@@ -1,4 +1,4 @@
-<!-- Yandex.RTB R-A-632107-1 -->
+<!-- Yandex.RTB <?php echo $blockId?> -->
 <div id="yandex_rtb_<?php echo $blockId?>"></div>
 <script type="text/javascript">
     (function(w, d, n, s, t) {
