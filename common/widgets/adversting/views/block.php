@@ -1,12 +1,12 @@
-<!-- Yandex.RTB R-A-632107-3 -->
-<div id="yandex_rtb_R-A-632107-3"></div>
+<!-- Yandex.RTB R-A-632107-1 -->
+<div id="yandex_rtb_<?php echo $blockId?>"></div>
 <script type="text/javascript">
     (function(w, d, n, s, t) {
         w[n] = w[n] || [];
         w[n].push(function() {
             Ya.Context.AdvManager.render({
-                blockId: "R-A-632107-3",
-                renderTo: "yandex_rtb_R-A-632107-3",
+                blockId: "<?php echo $blockId?>",
+                renderTo: "yandex_rtb_<?php echo $blockId?>",
                 async: true
             });
         });

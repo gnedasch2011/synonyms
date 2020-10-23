@@ -41,7 +41,9 @@ use common\widgets\Alert;
                 <div class="col-md-3">
                     <aside>
                         <div>
-                            <?= $this->render('@votpuskView/layouts/block/adversting/block_2'); ?>
+                            <?php
+                            echo \common\widgets\adversting\AdverstingWidget::widget(['blockId'=>Yii::$app->params['advertising_block_2']]);
+                            ?>
 
                         </div>
 
@@ -49,8 +51,6 @@ use common\widgets\Alert;
 <!--                            <h3><a href="#">О синонимах</a></h3>-->
                             <?php
                             $items = [
-
-
                             ];
 
                             echo \yii\widgets\Menu::widget([
@@ -64,7 +64,9 @@ use common\widgets\Alert;
                         </div>
 
                         <div class="baner_side">
-                            <?= $this->render('@votpuskView/layouts/block/adversting/block_3'); ?>
+                            <?php
+                            echo \common\widgets\adversting\AdverstingWidget::widget(['blockId'=>Yii::$app->params['advertising_block_3']]);
+                            ?>
                         </div>
                     </aside>
 
