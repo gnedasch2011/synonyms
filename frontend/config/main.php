@@ -32,6 +32,18 @@ return [
         ],
     ],
     'components' => [
+        'view' => [
+//            'class' => 'app\modules\common\components\View',
+            'theme' => [
+                'basePath' => '@app/themes/votpusk',
+                'baseUrl' => '@web/themes/votpusk',
+                'pathMap' => [
+                    '@app/views' => '@app/themes/votpusk',
+                    '@app/modules' => '@app/themes/votpusk/modules',
+                ]
+            ]
+        ],
+
         'request' => [
             'csrfParam' => '_csrf-frontend',
             'enableCsrfValidation' => false,
@@ -62,8 +74,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => 'synonyms/default/main-page',
-                'search/index' => 'search/default/index',
+                'search/default/index' => 'search/default/index',
                 'sitemap.xml' => 'sitemap/default',
                 'sitemap/<index:\d+>' => 'sitemap/default/sitemap',
                 '/<SearchQuery:\D+>' => 'synonyms/default/search-query',
@@ -72,6 +83,7 @@ return [
 //                [
 //                    'class' => 'frontend\modules\url\components\rule\UrlRule',
 //                ],
+                '' => 'synonyms/default/main-page',
             ],
         ],
 

@@ -16,13 +16,12 @@ class DefaultController extends Controller
     public function actionIndex()
     {
         $SearchQuery = new SearchQuery();
-
         if ($SearchQuery->load(\Yii::$app->request->post()) && $SearchQuery->validate()) {
 
             $searchWord = $SearchQuery->query;
 
             if ($searchWord) {
-                return $this->redirect('/' . \Yii::$app->params['mainControllers'] . '/' . $searchWord);
+                return $this->redirect('/' . $searchWord);
             }
 
         }
